@@ -40,10 +40,34 @@ function Nav() {
                     Home
                   </Link>
                 </li>
-                <li>
-                  <Link id="len2" to="/services" className="nav-link text-white hoverable">
+                <li className="nav-item dropdown">
+                  <Link
+                    id="len2"
+                    to="#"
+                    className="nav-link text-white hoverable dropdown-toggle"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
                     Services
                   </Link>
+                  <ul className="dropdown-menu bg-dark text-white">
+                    <li>
+                      <Link to="/web-development" className="dropdown-item text-white hoverable">
+                        Web Development
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/web-development" className="dropdown-item text-white hoverable">
+                        App Development
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/web-development" className="dropdown-item text-white hoverable">
+                        Pyrhon Development
+                      </Link>
+                    </li>
+                  </ul>
                 </li>
                 <li>
                   <Link id="len3" to="/portfolio" className="nav-link text-white hoverable">

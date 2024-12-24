@@ -73,3 +73,12 @@ body {
 .page-title {
   opacity: 0.75 !important;
 }
+
+.dropdown-item.hoverable {
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.dropdown-item.hoverable:hover {
+  color: black !important;
+  background-color: #f8f9fa;
+}
