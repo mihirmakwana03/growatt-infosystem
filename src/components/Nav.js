@@ -1,7 +1,27 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import './NavBar.css'; // Include your CSS styles
 
 function Nav() {
+  useEffect(() => {
+    const animateBounce = () => {
+      const stop = 6; // Total number of nav items
+      let i = 1;
+      const interval = setInterval(() => {
+        if (i > stop) {
+          clearInterval(interval);
+          return;
+        }
+        const element = document.getElementById(`len${i}`);
+        if (element) {
+          element.classList.toggle('bounce');
+        }
+        i++;
+      }, 500);
+    };
+    animateBounce();
+  }, []);
+
   return (
     <>
       <header>
@@ -16,32 +36,56 @@ function Nav() {
               </Link>
               <ul className="nav col-12 col-lg-auto my-2 justify-content-center my-md-0">
                 <li>
-                  <Link to="/" className="nav-link text-white">
+                  <Link id="len1" to="/" className="nav-link text-white hoverable">
                     Home
                   </Link>
                 </li>
-                <li>
-                  <Link to="/services" className="nav-link text-white">
+                <li className="nav-item dropdown">
+                  <Link
+                    id="len2"
+                    to="#"
+                    className="nav-link text-white hoverable dropdown-toggle"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
                     Services
                   </Link>
+                  <ul className="dropdown-menu bg-dark text-white">
+                    <li>
+                      <Link to="#" className="dropdown-item text-white hoverable">
+                        Web Development
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="#" className="dropdown-item text-white hoverable">
+                        App Development
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="#" className="dropdown-item text-white hoverable">
+                        Python Development
+                      </Link>
+                    </li>
+                  </ul>
                 </li>
                 <li>
-                  <Link to="/portfolio" className="nav-link text-white">
+                  <Link id="len3" to="/portfolio" className="nav-link text-white hoverable">
                     Portfolio
                   </Link>
                 </li>
                 <li>
-                  <Link to="/aboutus" className="nav-link text-white">
+                  <Link id="len4" to="/aboutus" className="nav-link text-white hoverable">
                     About Us
                   </Link>
                 </li>
                 <li>
-                  <Link to="/contact" className="nav-link text-white">
+                  <Link id="len5" to="/contact" className="nav-link text-white hoverable">
                     Contact Us
                   </Link>
                 </li>
                 <li>
-                  <Link to="/career" className="nav-link text-white">
+                  <Link id="len6" to="/career" className="nav-link text-white hoverable">
                     Career
                   </Link>
                 </li>
