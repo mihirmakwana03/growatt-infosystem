@@ -53,18 +53,18 @@ function Nav() {
                   </Link>
                   <ul className="dropdown-menu bg-dark text-white">
                     <li>
-                      <Link to="/web-development" className="dropdown-item text-white hoverable">
+                      <Link to="#" className="dropdown-item text-white hoverable">
                         Web Development
                       </Link>
                     </li>
                     <li>
-                      <Link to="/web-development" className="dropdown-item text-white hoverable">
+                      <Link to="#" className="dropdown-item text-white hoverable">
                         App Development
                       </Link>
                     </li>
                     <li>
-                      <Link to="/web-development" className="dropdown-item text-white hoverable">
-                        Pyrhon Development
+                      <Link to="#" className="dropdown-item text-white hoverable">
+                        Python Development
                       </Link>
                     </li>
                   </ul>

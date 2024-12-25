@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Nav from "./components/Nav";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -11,19 +12,23 @@ const Career = () => <h1>Career Page</h1>;
 function App() {
   return (
     <div>
+      {/* NAVBAR */}
       <Router>
-      <Nav />
-      <main className="container mt-4">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/aboutus" element={<AboutUs />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/career" element={<Career />} />
-        </Routes>
-      </main>
-    </Router>
+        <Nav />
+        <main className="container mt-4">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/aboutus" element={<AboutUs />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/career" element={<Career />} />
+          </Routes>
+        </main>
+      </Router>
+
+      {/* FOOTER */}
+        <Footer />
 
     </div>
   );
