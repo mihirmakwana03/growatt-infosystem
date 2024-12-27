@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import MainLayout from './components/MainLayout';
 
 const Home = () => <h1>Admin Home Page</h1>;
@@ -11,10 +11,10 @@ const Admin = () => {
   return (
     <MainLayout>
       <Routes>
-        <Route path="/adminhome" element={<Home />} />
-        <Route path="/adminportfolio" element={<Portfolio />} />
-        <Route path="/adminservices" element={<Service />} />
-        <Route path="/admincareer" element={<Career />} />
+        <Route path="home" element={<Home />} />
+        <Route path="portfolio" element={<Portfolio />} />
+        <Route path="services" element={<Service />} />
+        <Route path="career" element={<Career />} />
       </Routes>
     </MainLayout>
   );

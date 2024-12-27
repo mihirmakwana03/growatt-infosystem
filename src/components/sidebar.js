@@ -4,6 +4,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Logo from './img/logo.png';
 import './sidebar.css';
 
+const navItems = [
+  { path: '/admin/home', label: 'Home' },
+  { path: '/admin/portfolio', label: 'Portfolio' },
+  { path: '/admin/services', label: 'Services' },
+  { path: '/admin/career', label: 'Career' },
+];
+
 const Sidebar = () => {
   return (
     <div
@@ -11,35 +18,31 @@ const Sidebar = () => {
       style={{ width: '250px', height: '100vh' }}
     >
       <NavLink
-        to="/adminhome"
-        className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
+        to="/admin/home"
+        className={({ isActive }) =>
+          `d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none ${
+            isActive ? 'active' : ''
+          }`
+        }
       >
-        <a href="index.html">
+        <span>
           <img src={Logo} className="img-fluid" alt="logo" />
-        </a>
+        </span>
       </NavLink>
       <hr />
       <ul className="nav nav-pills flex-column mb-auto">
-        <li className="nav-item">
-          <NavLink to="/adminhome" className="nav-link link-dark" activeClassName="active" exact>
-            Home
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/adminportfolio" className="nav-link link-dark" activeClassName="active">
-            Portfolio
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/adminservices" className="nav-link link-dark" activeClassName="active">
-            Service
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/admincareer" className="nav-link link-dark" activeClassName="active">
-            Career
-          </NavLink>
-        </li>
+        {navItems.map((item) => (
+          <li key={item.path} className="nav-item">
+            <NavLink
+              to={item.path}
+              className={({ isActive }) =>
+                `nav-link link-dark ${isActive ? 'active' : ''}`
+              }
+            >
+              {item.label}
+            </NavLink>
+          </li>
+        ))}
       </ul>
     </div>
   );
