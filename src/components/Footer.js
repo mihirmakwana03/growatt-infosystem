@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import Logo from './img/logo.png'; // Adjust the path as needed
+import Logo from './img/logo.png'; 
 import { FaMapMarkedAlt } from "react-icons/fa";
 import { LuPhoneCall } from "react-icons/lu";
 import { IoMdMailOpen } from "react-icons/io";
