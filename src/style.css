@@ -6,6 +6,12 @@ body,
 }
 
 #root {
-    position: fixed;
+    position:absolute;
     background-color: black;
+    margin-top: -8%;
+}
+
+.div{
+    position: relative;
+    overflow: scroll;
 }
