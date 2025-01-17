@@ -12,7 +12,7 @@ const Login = () => {
     e.preventDefault();
     // Handle login logic here
     if (uname === 'admin' && password === 'admin123') {
-      navigate('/admin');
+      navigate('/admin/dashboard');
     } else {
       alert('Invalid credentials');
     }

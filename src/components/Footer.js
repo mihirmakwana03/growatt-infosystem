@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import Logo from './img/logo.png'; // Adjust the path as needed
+import Logo from './img/logo.png'; 
 import { FaMapMarkedAlt } from "react-icons/fa";
 import { LuPhoneCall } from "react-icons/lu";
 import { IoMdMailOpen } from "react-icons/io";
@@ -30,7 +30,7 @@ const Footer = () => {
                 <div className="cta-text">
                   <LuPhoneCall />
                   <h4>Call us</h4>
-                  <span>+91 9510806265</span>
+                  <span>+91 81558 08720</span>
                 </div>
               </div>
             </div>
@@ -107,7 +107,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-xl-12 text-center">
               <div className="copyright-text">
-                <p>Copyright &copy; 2018, All Right Reserved <a href="#">Growatt Infosystem</a></p>
+                <p>Copyright &copy; 2018, All Right Reserved <a href="#">Growatt InfoSystem</a></p>
               </div>
             </div>
           </div>
