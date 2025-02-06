@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Footer.css";
 import Logo from "./img/logo.png";
 import { FaMapMarkedAlt } from "react-icons/fa";
@@ -10,6 +10,30 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 
 const Footer = () => {
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch("http://localhost:5000/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email,
+          subject: "Subscription",
+          message: "Thank you for subscribing!", //We can write any message here with subject
+        }),
+      });
+
+      const data = await response.json();
+      alert(data.success || data.error);
+      setEmail(""); // Clear input after submission
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  };
+
   return (
     <footer className="footer-section">
       <div className="container">
@@ -106,13 +130,15 @@ const Footer = () => {
                   </p>
                 </div>
                 <div className="subscribe-form">
-                  <form action="">
+                  <form onSubmit={handleSubmit}>
                     <input
                       type="text"
                       placeholder="Email Address"
                       className="e-mail"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                     />
-                    <button>
+                    <button type="submit">
                       <MdOutlineAlternateEmail />
                     </button>
                   </form>

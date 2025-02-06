@@ -12,10 +12,14 @@ app.use(cors());
 
 // Email Sending API
 app.post("/send-email", async (req, res) => {
-  const { email, subject, message } = req.body;
+  const {
+    email,
+    subject = "Subscription",
+    message = "Thank you for subscribing!",
+  } = req.body;
 
-  if (!email || !subject || !message) {
-    return res.status(400).json({ error: "All fields are required" });
+  if (!email) {
+    return res.status(400).json({ error: "Email is required" });
   }
 
   try {
@@ -30,18 +34,19 @@ app.post("/send-email", async (req, res) => {
     let mailOptions = {
       from: process.env.EMAIL,
       to: email,
-      subject: subject,
+      subject,
       text: message,
     };
 
     let info = await transporter.sendMail(mailOptions);
-    res.status(200).json({ success: `Email sent: ${email}` });
+    res.status(200).json({ success: `Email sent to ${email}` });
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    console.error("Email error:", error);
+    res.status(500).json({ error: "Failed to send email" });
   }
 });
 
 // Start Server
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-});
+app.listen(PORT, () =>
+  console.log(`Server running on http://localhost:${PORT}`)
+);
