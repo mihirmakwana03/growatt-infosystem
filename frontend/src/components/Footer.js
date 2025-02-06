@@ -21,13 +21,13 @@ const Footer = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           email,
-          subject: "Subscription",
-          message: "Thank you for subscribing!", //We can write any message here with subject
+          subject: "Demo Email",
+          message: "Test Email", //We can write any message here with subject
         }),
       });
 
       const data = await response.json();
-      alert(data.success || data.error);
+      console.log(data.success || data.error);
       setEmail(""); // Clear input after submission
     } catch (error) {
       console.error("Error:", error);

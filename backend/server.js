@@ -12,11 +12,7 @@ app.use(cors());
 
 // Email Sending API
 app.post("/send-email", async (req, res) => {
-  const {
-    email,
-    subject = "Subscription",
-    message = "Thank you for subscribing!",
-  } = req.body;
+  const { email, subject = "Demo Email", message = "Test email" } = req.body;
 
   if (!email) {
     return res.status(400).json({ error: "Email is required" });
