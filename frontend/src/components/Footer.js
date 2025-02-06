@@ -78,7 +78,7 @@ const Footer = () => {
             <div className="col-xl-4 col-lg-4 mb-50">
               <div className="footer-widget text-center">
                 <div className="footer-logo">
-                  <a href="index.html">
+                  <a href="/">
                     <img src={Logo} className="img-fluid" alt="logo" />
                   </a>
                 </div>
