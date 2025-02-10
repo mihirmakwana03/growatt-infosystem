@@ -1,153 +1,148 @@
-function About()
-{
-    return(
-        
-      <div className="bg-dark text-white font-roboto">
-      <div className="container py-5">
+import whatsapp from "../images/whatsapp.png";
+import "../index.css";
 
-      <div
-      className=" bg-dark d-flex align-items-center justify-content-center min-vh-60 text-white px-4"
-      style={{ fontFamily: "'Poppins', sans-serif" }}
-    >
-      <div className="text-center">
-        <h1 className="display-4 fw-bold mb-4">About Us</h1>
-        <p className="lead">
-          <span className="fw-semibold">GROWATT INFOSYSTEM </span>{" "}
-          <span className="text-primary">&gt;About us</span>
-        </p>
-      </div>
-    </div>
+function About() {
+  return (
+    <>
+      <div className="bg-gray-900 text-white font-roboto">
+        <div className="container mx-auto py-0">
+          <div
+            className="bg-gray-900 flex items-center justify-center min-h-[30vh] text-white px-2"
+            style={{ fontFamily: "'Poppins', sans-serif" }}
+          >
+            <div className="text-center">
+              <h1 className="text-4xl font-bold mb-4">About Us</h1>
+              <p className="text-lg">
+                <span className="font-semibold">GROWATT INFOSYSTEM </span>{" "}
+                <span className="text-blue-500">&gt;About us</span>
+              </p>
+            </div>
+          </div>
 
+          {/* Header Section */}
+          <header className="text-center">
+            <h1 className="text-4xl font-bold mb-4">
+              Meet Our <span className="text-color">Team</span>
+            </h1>
+            <p className="mb-4 text-lg">
+              We are proud to <strong>introduce</strong> you to the{" "}
+              <strong>talented individuals</strong> who make up our team. Each
+              member brings a{" "}
+              <strong>unique set of skills and expertise</strong>, contributing
+              to our <strong>collective success</strong>.
+            </p>
+          </header>
 
-        {/* Header Section */}
-        <header>
-          <h1 className="text-center display-4 fw-bold mb-4">
-            Meet Our <span className="text-primary ">Team</span>
-          </h1>
-          <p className="text-center mb-4 lead">
-            We are proud to <strong>introduce</strong> you to the{" "}
-            <strong>talented individuals</strong> who make up our team. Each
-            member brings a <strong>unique set of skills and expertise</strong>,
-            contributing to our <strong>collective success</strong>.
-          </p>
-          {/* <div className="d-flex justify-content-center mb-4">
-            <button className="btn btn-info rounded-circle me-3">
-              <i className="fa fa-arrow-left"></i>
-            </button>
-            <button className="btn btn-info rounded-circle">
-              <i className="fa fa-arrow-right"></i>
-            </button>
-          </div> */}
-        </header>
+          {/* Team Members */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            {/* Team Member 1 */}
+            <div className="bg-gray-800 text-white rounded-lg shadow-lg transform transition-transform hover:scale-105 p-5 text-center">
+              <i className="fas fa-quote-left text-blue-500 text-2xl"></i>
+              <img
+                src="https://cdn.zeebiz.com/sites/default/files/2022/11/05/209096-virat-kohli-7-pti.jpg"
+                alt="Vishal Ponkiya"
+                className="rounded-full my-3 w-48 h-48 object-cover mx-auto"
+              />
+              <h5 className="text-xl font-bold">Vishal Ponkiya</h5>
+              <p className="text-blue-500">CEO & Founder</p>
+            </div>
 
-        {/* Team Members */}
-        <div className="row mt-4">
-          {/* Team Member 1 */}
-          <div className="col-md-6 mb-4">
-              <div
-                className="card bg-dark text-white border-0 rounded-4 shadow-lg hover-effect"
-                style={{
-                  transition: "transform 0.3s ease, box-shadow 0.3s ease",
-                }}
-              >
-                <div className="card-body text-center">
-                  <i className="fa fa-quote-left text-info fs-2"></i>
-                  <img
-                    src="https://cdn.zeebiz.com/sites/default/files/2022/11/05/209096-virat-kohli-7-pti.jpg"
-                    alt="Vishal Ponkiya"
-                    className="rounded-circle my-3"
-                    width="200"
-                    height="200"
-                  />
-                  <h5 className="card-title fw-bold">Vishal Ponkiya</h5>
-                  <p className="text-primary">CEO & Founder</p>
+            {/* Team Member 2 */}
+            <div className="bg-gray-800 text-white rounded-lg shadow-lg transform transition-transform hover:scale-105 p-5 text-center">
+              <i className="fas fa-quote-left text-blue-500 text-2xl"></i>
+              <img
+                src="https://cdn.zeebiz.com/sites/default/files/2022/11/05/209096-virat-kohli-7-pti.jpg"
+                alt="Meet Ponkiya"
+                className="rounded-full my-3 w-48 h-48 object-cover mx-auto"
+              />
+              <h5 className="text-xl font-bold">Meet Ponkiya</h5>
+              <p className="text-blue-500">CFO & Co-Founder</p>
+            </div>
+          </div>
+
+          {/* About Section */}
+          <div className="bg-gray-900 text-white py-5">
+            <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
+              {/* Left Section */}
+              <div className="md:w-1/2">
+                <h1 className="text-4xl font-bold">
+                  About <span className="text-color">GROWATT INFOSYSTEM</span>
+                </h1>
+                <p className="mt-3 text-lg">
+                  Welcome to <strong>GROWATT INFOSYSTEM</strong>, formerly known
+                  as <strong>GROWATT INFOSYSTEM Studio</strong>, a leading{" "}
+                  <strong>logo and branding agency</strong> dedicated to helping
+                  businesses establish a strong and memorable{" "}
+                  <strong>brand identity</strong>.
+                </p>
+                <p className="mt-3 text-lg">
+                  Our team of talented <strong>designers</strong>,{" "}
+                  <strong>developers</strong>, and{" "}
+                  <strong>branding specialists</strong> brings a wealth of
+                  experience and knowledge to every project. We strive to
+                  revolutionize the way businesses perceive and utilize
+                  branding, <strong>helping our clients</strong> establish a
+                  lasting connection with their customers and achieve their
+                  business objectives.
+                </p>
+                <div className="mt-4 p-4 bg-gray-200 rounded-lg">
+                  <div className=" flex items-center mb-3 ">
+                    <i className="fas fa-envelope text-gray-900 mr-3 text-2xl"></i>
+                    <div>
+                      <p className="mb-0 text-sm text-gray-800">Email Us</p>
+                      <a
+                        href="mailto:work@hexonbranding.com"
+                        className="text-gray-900 font-bold"
+                      >
+                        work@growattinfosystem.com
+                      </a>
+                    </div>
+                  </div>
+                  <div className="flex items-center">
+                    <i className="fab fa-whatsapp text-gray-900 mr-3 text-2xl"></i>
+                    <div>
+                      <p className="mb-0 text-sm text-gray-800">Whatsapp Us</p>
+                      <a
+                        href="tel:+919558198701"
+                        className="text-gray-900 font-bold"
+                      >
+                        +91 95581 98701
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
 
-
-          {/* Team Member 2 */}
-          <div className="col-md-6 mb-4">
-            <div className="card bg-dark text-white border-0 rounded-4 shadow-lg">
-              <div className="card-body text-center">
-                <i className="fa fa-quote-left text-info fs-2"></i>
+              {/* Right Section */}
+              <div className="md:w-2/5 mt-5 md:mt-0">
                 <img
-                  src="https://cdn.zeebiz.com/sites/default/files/2022/11/05/209096-virat-kohli-7-pti.jpg"
-                  alt="Meet Ponkiya"
-                  className="rounded-circle my-3"
-                  width="200"
-                  height="200"
+                  src="https://www.sagipl.com/images/hire-web/ui-designer.webp"
+                  alt="Illustration"
+                  className="rounded-lg mx-auto"
                 />
-                <h5 className="card-title fw-bold">Meet Ponkiya</h5>
-                <p className="text-primary">CFO & Co-Founder</p>
               </div>
             </div>
           </div>
-        </div>
 
-        <div className="bg-dark text-white py-5">
-      <div className="container d-flex flex-column flex-md-row align-items-center justify-content-between">
-        {/* Left Section */}
-        <div className="col-md-6">
-          <h1 className="display-4 fw-bold">
-            About <span className="text-primary">GROWATT INFOSYSTEM</span>
-          </h1>
-          <p className="mt-3 lead text-sm">
-            Welcome to <strong>GROWATT INFOSYSTEM</strong>, formerly known as{" "}
-            <strong>GROWATT INFOSYSTEM Studio</strong>, a leading{" "}
-            <strong>logo and branding agency</strong> dedicated to helping
-            businesses establish a strong and memorable{" "}
-            <strong>brand identity</strong>.
-          </p>
-          <p className="mt-3 lead text-sm">
-            Our team of talented <strong>designers</strong>,{" "}
-            <strong>developers</strong>, and <strong>branding specialists</strong>{" "}
-            brings a wealth of experience and knowledge to every project. We strive to revolutionize the way businesses perceive and utilize branding,{" "}
-            <strong>helping our clients</strong> establish a lasting connection with their customers and achieve their business objectives.
-          </p>
-          <div className="mt-4 p-4 bg-light rounded-4 ">
-            <div className="d-flex align-items-center mb-3">
-              <i className="fa fa-envelope text-white me-3 fs-4"></i>
-              <div>
-                <p className="mb-0 small text-dark">Email Us</p>
-                <a
-                  href="mailto:work@hexonbranding.com"
-                  className="text-dark fw-bold"
-                >
-                  work@growattinfosystem.com
-                </a>
-              </div>
-            </div>
-            <div className="d-flex align-items-center">
-              <i className="fa fa-whatsapp text-white me-3 fs-4"></i>
-              <div>
-                <p className="mb-0 small text-dark">Whatsapp Us</p>
-                <a
-                  href="tel:+919558198701"
-                  className="text-dark fw-bold">
-                  +91 95581 98701
-                </a>
-              </div>
-            </div>
+          {/* WhatsApp Floating Button */}
+          <div className="fixed bottom-4 right-4 p-3" style={{ zIndex: 6 }}>
+            <a
+              href="https://wa.me/9023608908?text=Hello how can i help you?"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={whatsapp}
+                width="40"
+                alt="WhatsApp"
+                // className="rounded-full"
+              />
+            </a>
           </div>
         </div>
-
-        {/* Right Section */}
-        <div className="col-md-5 mt-2 mt-md-0 ">
-          <img
-            src="https://cdn.zeebiz.com/sites/default/files/2022/11/05/209096-virat-kohli-7-pti.jpg"
-            alt="Illustration"
-            className="img-fluid rounded-4"
-          />
-        </div>
       </div>
-    </div>
-      </div>
-
-      
-    </div>
-          
-    );
+    </>
+  );
 }
 
 export default About;
