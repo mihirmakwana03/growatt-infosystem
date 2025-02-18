@@ -16,7 +16,7 @@
     "react-bootstrap": "^2.10.7",
     "react-dom": "^19.0.0",
     "react-refresh": "^0.16.0",
-    "react-scripts": "^3.0.1",
+    "react-scripts": "^5.0.1",
     "react-swift-reveal": "^1.1.0",
     "source-map-loader": "^5.0.0",
     "style-loader": "^4.0.0",
@@ -49,7 +49,6 @@
     ]
   },
   "devDependencies": {
-    "babel-loader": "^9.2.1",
     "postcss-loader": "^8.1.1"
   }
 }

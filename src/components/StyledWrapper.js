@@ -7,58 +7,58 @@ const Button = () => {
       <div className="main">
         <div className="up">
           <button className="card1">
-            <svg
-              className="instagram"
-              fillRule="nonzero"
-              height="40px"
-              width="40px"
-              viewBox="0,0,256,256"
-              xmlnsXlink="http://www.w3.org/1999/xlink"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g
-                style={{ mixBlendMode: "normal" }}
-                textAnchor="none"
-                fontSize="none"
-                fontWeight="none"
-                fontFamily="none"
-                strokeDashoffset={0}
-                strokeDasharray
-                strokeMiterlimit={10}
-                strokeLinejoin="miter"
-                strokeLinecap="butt"
-                strokeWidth={1}
-                stroke="none"
+            <a href="https://www.instagram.com/growatt_info/"
+              target="_blank"
+              rel="noopener noreferrer">
+              <svg
+                className="instagram"
                 fillRule="nonzero"
+                height="40px"
+                width="40px"
+                viewBox="0,0,256,256"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <g transform="scale(8,8)">
-                  <path d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z" />
+                <g
+                  style={{ mixBlendMode: "normal" }}
+                  textAnchor="none"
+                  fontSize="none"
+                  fontWeight="none"
+                  fontFamily="none"
+                  strokeDashoffset={0}
+                  strokeDasharray
+                  strokeMiterlimit={10}
+                  strokeLinejoin="miter"
+                  strokeLinecap="butt"
+                  strokeWidth={1}
+                  stroke="none"
+                  fillRule="nonzero"
+                >
+                  <g transform="scale(8,8)">
+                    <path d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z" />
+                  </g>
                 </g>
-              </g>
-            </svg>
+              </svg>
+            </a>
           </button>
+
           <button className="card2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="linkedin"
-              height="1.6em"
-              viewBox="0 0 448 512"
+            <a href="https://www.facebook.com/Growattinfo/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
-            </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                height={36}
+                className="facebook"
+                width={36}
+              >
+                <path d="M9.19795 21.5H13.198V13.4901H16.8021L17.198 9.50977H13.198V7.5C13.198 6.94772 13.6457 6.5 14.198 6.5H17.198V2.5H14.198C11.4365 2.5 9.19795 4.73858 9.19795 7.5V9.50977H7.19795L6.80206 13.4901H9.19795V21.5Z" />
+              </svg>
+            </a>
           </button>
-          {/* <button className="card2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              height={35}
-              className="facebook"
-              width={35}
-            >
-              <path d="M9.19795 21.5H13.198V13.4901H16.8021L17.198 9.50977H13.198V7.5C13.198 6.94772 13.6457 6.5 14.198 6.5H17.198V2.5H14.198C11.4365 2.5 9.19795 4.73858 9.19795 7.5V9.50977H7.19795L6.80206 13.4901H9.19795V21.5Z" />
-            </svg>
-          </button> */}
         </div>
         <div className="down">
           <button className="card3">
@@ -78,7 +78,25 @@ const Button = () => {
               </svg>
             </a>
           </button>
+
           <button className="card4">
+            <a href="https://www.linkedin.com/company/growatt-infosystem/"
+              target="_blank"
+              rel="noopener noreferrer
+            ">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="linkedin"
+                height="1.6em"
+                viewBox="0 0 448 512"
+              >
+                <path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
+              </svg>
+            </a>
+          </button>
+
+
+          {/* <button className="card4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -89,7 +107,7 @@ const Button = () => {
             >
               <path d="M6 12C6 15.3137 8.68629 18 12 18C14.6124 18 16.8349 16.3304 17.6586 14H12V10H21.8047V14H21.8C20.8734 18.5645 16.8379 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C15.445 2 18.4831 3.742 20.2815 6.39318L17.0039 8.68815C15.9296 7.06812 14.0895 6 12 6C8.68629 6 6 8.68629 6 12Z" />
             </svg>
-          </button>
+          </button> */}
         </div>
       </div>
     </StyledWrapper>
@@ -145,13 +163,12 @@ const StyledWrapper = styled.div`
   }
 
   .linkedin {
-    margin-top: 0.6em;
-    margin-left: 1em;
+    margin-top: -1em;
+    margin-left: 1.5em;
     fill: #0077b5;
   }
 
-  ${
-    "" /* .card2 {
+  .card2 {
     width: 90px;
     height: 90px;
     outline: none;
@@ -166,8 +183,7 @@ const StyledWrapper = styled.div`
   .facebook {
     margin-top: 0.6em;
     margin-left: 1em;
-    fill: #03a9f4;
-  } */
+    fill: #1877f2;
   }
 
   .card3 {
@@ -239,10 +255,10 @@ const StyledWrapper = styled.div`
   .card4:hover {
     cursor: pointer;
     scale: 1.1;
-    background-color: #ff0004;
+    background-color: #0077b5;
   }
 
-  .card4:hover .gmail {
+  .card4:hover .linkedin {
     fill: white;
   }
 `;
