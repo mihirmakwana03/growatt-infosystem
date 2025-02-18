@@ -99,8 +99,9 @@ const Contact = () => {
                 <h4 className="text-lg font-semibold">Head Office</h4>
                 <ul className="mt-2 text-sm">
                   <li className="mb-2">
-                    <i className="fas fa-map-marker-alt text-blue-500"></i> 610,
-                    Alpha One, Rajkot 360004
+                    <i className="fas fa-map-marker-alt text-blue-500"></i>{" "}
+                    831,150ft Ring Road, Near Mavdi Circle, Rajkot, Gujarat,
+                    India,36004
                   </li>
                   <li className="mb-2">
                     <i className="fas fa-envelope text-blue-500"></i>{" "}
@@ -113,7 +114,7 @@ const Contact = () => {
                   </li>
                   <li className="mb-2">
                     <i className="fas fa-phone text-blue-500"></i> +91
-                    9558198701
+                    9510806265
                   </li>
                 </ul>
               </div>
