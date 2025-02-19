@@ -140,6 +140,99 @@ const Contact = () => {
                     id="fullName"
                     className={`w-full p-2 border ${
                       errors.fullName ? "border-red-500" : "border-gray-600"
+                    } rounded-md text-black`}
+                    value={formData.fullName}
+                    onChange={handleChange}
+                  />
+                  {errors.fullName && (
+                    <p className="text-red-500 text-xs mt-1">
+                      {errors.fullName}
+                    </p>
+                  )}
+                </div>
+
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium">
+                    Email <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    className={`w-full p-2 border ${
+                      errors.email ? "border-red-500" : "border-gray-600"
+                    } rounded-md text-black`}
+                    value={formData.email}
+                    onChange={handleChange}
+                  />
+                  {errors.email && (
+                    <p className="text-red-500 text-xs mt-1">{errors.email}</p>
+                  )}
+                </div>
+
+                <div>
+                  <label htmlFor="phone" className="block text-sm font-medium">
+                    Phone Number <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="phone"
+                    className={`w-full p-2 border ${
+                      errors.phone ? "border-red-500" : "border-gray-600"
+                    } rounded-md text-black`}
+                    value={formData.phone}
+                    onChange={handleChange}
+                  />
+                  {errors.phone && (
+                    <p className="text-red-500 text-xs mt-1">{errors.phone}</p>
+                  )}
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium"
+                  >
+                    Message <span className="text-red-500">*</span>
+                  </label>
+                  <textarea
+                    id="message"
+                    rows="4"
+                    className={`w-full p-2 border ${
+                      errors.message ? "border-red-500" : "border-gray-600"
+                    } rounded-md text-black`}
+                    value={formData.message}
+                    onChange={handleChange}
+                  />
+                  {errors.message && (
+                    <p className="text-red-500 text-xs mt-1">
+                      {errors.message}
+                    </p>
+                  )}
+                </div>
+
+                <button
+                  type="submit"
+                  className="w-full bg-blue-500 text-white p-3 rounded-full hover:bg-blue-600"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+
+            {/* <div className="p-4 bg-gray-700 rounded-lg">
+              <form className="grid grid-cols-1 gap-4" onSubmit={handleSubmit}>
+                <div>
+                  <label
+                    htmlFor="fullName"
+                    className="block text-sm font-medium"
+                  >
+                    Full Name <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="fullName"
+                    className={`w-full p-2 border ${
+                      errors.fullName ? "border-red-500" : "border-gray-600"
                     } rounded-md`}
                     value={formData.fullName}
                     onChange={handleChange}
@@ -217,20 +310,22 @@ const Contact = () => {
                   Send Message
                 </button>
               </form>
-            </div>
+            </div> */}
           </div>
 
           {/* Google Map */}
           <div className="mt-6">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230.7750430458216!2d70.78665602476792!3d22.262806667271903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959ca5dbe7afda3%3A0x6d8e1af5be0f4126!2sRK%20Empire!5e0!3m2!1sen!2sin!4v1735227505832!5m2!1sen!2sin"
-              width="100%"
-              height="450"
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
+            <div className="relative w-full aspect-[16/9] sm:aspect-[4/3] md:aspect-[3/2] lg:aspect-[16/7] min-h-[300px]">
+              <iframe
+                className="absolute top-0 left-0 w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230.7750430458216!2d70.78665602476792!3d22.262806667271903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959ca5dbe7afda3%3A0x6d8e1af5be0f4126!2sRK%20Empire!5e0!3m2!1sen!2sin&z=12"
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
           </div>
+
           <div className="fixed bottom-0 right-0 p-3" style={{ zIndex: "6" }}>
             <a
               href="https://wa.me/9023608908?text=Hello how can i help you?"
