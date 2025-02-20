@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import './NavBar.css'; // Include your CSS styles
+import './NavBar.css';
 
 function Nav() {
   useEffect(() => {
     const animateBounce = () => {
-      const stop = 6; // Total number of nav items
+      const stop = 6;
       let i = 1;
       const interval = setInterval(() => {
         if (i > stop) {
