@@ -31,7 +31,7 @@ function Nav() {
               <Link
                 to="/"
                 className="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-                  Growatt InfoSystem
+                  <img src={require('./img/logo.png')} alt="Growatt InfoSystem Logo" className="logo" />
               </Link>
               <ul className="nav col-12 col-lg-auto my-2 justify-content-center my-md-0">
                 <li>

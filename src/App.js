@@ -1,8 +1,9 @@
 import Nav from "./components/Nav";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
+import Home from "./components/Home";
 
-const Home = () => <h1>Home Page</h1>;
+// const Home = () => <h1>Home Page</h1>;
 const Services = () => <h1>Services Page</h1>;
 const Portfolio = () => <h1>Portfolio Page</h1>;
 const AboutUs = () => <h1>About Us Page</h1>;
@@ -25,7 +26,7 @@ function App() {
         </Routes>
       </main>
     </Router>
-    <Footer />
+    {/* <Footer /> */}
     </div>
   );
 }
