@@ -1,3 +1,5 @@
+// Admin Page Layout
+
 import React from 'react';
 import Sidebar from './sidebar';
 
