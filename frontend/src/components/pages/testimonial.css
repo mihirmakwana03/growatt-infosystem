@@ -1,0 +1,14 @@
+.testimonial-card {
+    width: 280px; /* Increase card width */
+    min-height: 150px; /* Ensure enough space for text */
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word; /* Ensures text doesn't overflow */
+}
